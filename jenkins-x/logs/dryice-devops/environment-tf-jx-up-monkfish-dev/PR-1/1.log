@@ -1,0 +1,50 @@
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1598287939.0822427,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-dryice-devops-environment-tf-jx-hnd8j-6rttt[0m
+{"level":"info","ts":1598288039.1382594,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*************/environment-tf-**-up-monkfish-dev.git @ master in path /workspace/source"}
+{"level":"warn","ts":1598288039.138358,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1598288039.191225,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:4f9f6f2b0ef37260264c12973cf07c41a4e77669,1:4f469fecf5d82a75b83cd5ba2f0c96816a60da77
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git fetch origin --unshallow 4f469fecf5d82a75b83cd5ba2f0c96816a60da77: 4f9f6f2b0ef37260264c12973cf07c41a4e77669:
+DEBUG: ran git fetch --unshallow origin 4f469fecf5d82a75b83cd5ba2f0c96816a60da77: 4f9f6f2b0ef37260264c12973cf07c41a4e77669: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git reset --hard 4f9f6f2b0ef37260264c12973cf07c41a4e77669
+DEBUG: ran git reset --hard 4f9f6f2b0ef37260264c12973cf07c41a4e77669 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 4f469fecf5d82a75b83cd5ba2f0c96816a60da77
+DEBUG: ran git merge 4f469fecf5d82a75b83cd5ba2f0c96816a60da77 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 4f9f6f2b0ef37260264c12973cf07c41a4e77669..HEAD
+Merged SHA 4f469fecf5d82a75b83cd5ba2f0c96816a60da77 with commit message 'Add app **-app-ui 0.1.49' into base branch master
+
+Showing logs for build [32mdryice-devops-environment-tf-jx-hnd8j-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+error: resolve the secrets URIs: replacing secrets URIs: replacing vault paths in *****User:
+  password: local:tf-**-up-monkfish/*****User:password
+  username: *****
+docker:
+  email: saurabht@hcl.com
+  password: local:tf-**-up-monkfish/docker:password
+  url: https://index.docker.io/v1/
+  username: *****
+enableDocker: true
+pipelineUser:
+  email: saurabht@hcl.com
+  token: local:tf-**-up-monkfish/pipelineUser:token
+  username: *************
+prow:
+  hmacToken: local:tf-**-up-monkfish/prow:hmacToken
+: unable to find "password" in secret at "tf-**-up-monkfish/*****User"
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-verify-parameters'. The execution of the pipeline has stopped.[0m
