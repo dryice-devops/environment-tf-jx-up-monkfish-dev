@@ -1,0 +1,15 @@
+adminUser:
+  password: local:tf-jx-up-monkfish/adminUser:password
+  username: admin
+docker:
+  email: saurabht@hcl.com
+  password: local:tf-jx-up-monkfish/docker:password
+  url: https://index.docker.io/v1/
+  username: admin
+enableDocker: true
+pipelineUser:
+  email: saurabht@hcl.com
+  token: local:tf-jx-up-monkfish/pipelineUser:token
+  username: dryice-devops
+prow:
+  hmacToken: local:tf-jx-up-monkfish/prow:hmacToken
