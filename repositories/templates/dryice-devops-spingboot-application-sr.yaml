@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: dryice-devops
+    provider: github
+    repository: spingboot-application
+  name: dryice-devops-spingboot-application
+spec:
+  description: Imported application for dryice-devops/spingboot-application
+  httpCloneURL: https://github.com/dryice-devops/spingboot-application.git
+  org: dryice-devops
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spingboot-application
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/dryice-devops/spingboot-application.git
