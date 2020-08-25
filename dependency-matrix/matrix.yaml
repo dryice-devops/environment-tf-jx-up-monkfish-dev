@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
   owner: dryice-devops
-  repo: python-flask-docker
-  url: https://github.com/dryice-devops/python-flask-docker.git
+  repo: spingboot-application
+  url: https://github.com/dryice-devops/spingboot-application.git
   version: ""
   versionURL: ""
